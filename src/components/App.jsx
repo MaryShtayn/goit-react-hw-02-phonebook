@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { nanoid } from 'nanoid';
+
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
@@ -9,6 +9,11 @@ export class App extends Component {
     contacts: [],
     filter: '',
   };
+
+  formSubmitHandler = data => {
+    console.log(data);
+  };
+
   render() {
     return (
       <div
